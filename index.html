@@ -1,0 +1,48 @@
+<html>
+  <head>
+    
+    <title>Dave's Head</title>
+    
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    
+  </head>
+  <body>
+    <a-scene 
+             background="color: #ECECEC"
+             >
+      
+ 
+      <a-obj-model  src="https://cdn.glitch.com/0beab8f3-9b67-4894-911f-7045d6f62430%2FDAVE_TOUNGE.obj?v=1589344293466" 
+                   scale ="0.03 0.03 0.03"
+                   position="0 0 -4"
+                   color="#C097CF"
+                   rotation="0 0 0">
+        
+        
+           <a-animation attribute="rotation"
+               dur="10000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation> 
+        
+<!--               <a-animation attribute="color"
+               dur="10000"
+               fill="forwards"
+               to="#CO97CF"
+               repeat="indefinite"></a-animation> -->
+        
+        </a-obj-model>
+      
+
+      
+      <a-plane position="0 0 -4" 
+               rotation="-90 0 0" 
+               width="4" 
+               height="4" 
+               color="pink" 
+               shadow>
+      </a-plane>
+      
+    </a-scene>
+  </body>
+</html>
